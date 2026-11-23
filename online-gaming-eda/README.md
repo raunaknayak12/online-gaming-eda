@@ -1,93 +1,66 @@
-# Online Gaming Behavior - Exploratory Data Analysis
+# Online Gaming Behavior — Exploratory Data Analysis (EDA)
 
-## 📊 Project Overview
-This project performs comprehensive exploratory data analysis (EDA) on online gaming behavior data from India. The analysis covers various aspects of gaming habits, including play time, spending patterns, demographics, and their correlations.
+[![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
+[![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-150458.svg)](https://pandas.pydata.org/)
+[![NumPy](https://img.shields.io/badge/NumPy-Numerical%20Computing-013243.svg)](https://numpy.org/)
+[![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-F37626.svg)](https://jupyter.org/)
+[![Excel](https://img.shields.io/badge/Excel-Pivot%20Analysis-217346.svg)](https://www.microsoft.com/en-us/microsoft-365/excel)
 
-## 📁 Project Structure
-```
-online-gaming-eda/
-│
-├── data/                                    # Dataset folder
-│   └── online_gaming_behavior_cleaned (1).xlsx
-│
-├── notebooks/                               # Jupyter notebooks
-│   └── Online_Gaming_EDA.ipynb
-│
-├── README.md                                # Project documentation
-├── requirements.txt                         # Python dependencies
-└── .gitignore                              # Git ignore file
-```
-
-## 📈 Analysis Highlights
-
-The EDA covers:
-- **Data Cleaning**: Handling missing values, standardizing categories, converting data types
-- **Statistical Analysis**: Distribution of play hours and monthly spending
-- **Demographic Analysis**: Age, gender, and regional patterns
-- **Behavioral Insights**: Game type preferences, public WiFi usage, internet scheme adoption
-- **Impact Assessment**: Health issues and academic/work impact analysis
-- **Visualizations**: Distribution plots, correlation analysis
-
-## 🔍 Key Findings
-
-### Dataset Overview
-- **500 users** with 11 features
-- Features include: user demographics, play time, spending, game preferences, and impact indicators
-
-### Data Quality
-- Successfully handled missing values using appropriate imputation strategies
-- Standardized categorical values (gender, region, WiFi usage)
-- Removed negative/invalid values from numerical columns
-
-### Main Insights
-- Average daily play hours: **5.38 hours**
-- Median monthly spend: **₹2,483**
-- Data shows relatively normal distributions for both metrics
-
-## 🛠️ Technologies Used
-- **Python 3.x**
-- **pandas** - Data manipulation and analysis
-- **numpy** - Numerical computing
-- **matplotlib** - Data visualization
-- **seaborn** - Statistical data visualization
-- **openpyxl** - Excel file handling
-
-## 🚀 Getting Started
-
-### Prerequisites
-```bash
-pip install -r requirements.txt
-```
-
-### Running the Analysis
-1. Clone this repository
-2. Install dependencies: `pip install -r requirements.txt`
-3. Open the Jupyter notebook: `jupyter notebook notebooks/Online_Gaming_EDA.ipynb`
-4. Run all cells to reproduce the analysis
-
-## 📊 Dataset Information
-
-The dataset contains cleaned online gaming behavior data with the following features:
-- `user_id`: Unique identifier
-- `age`: User age
-- `gender`: User gender
-- `region`: Urban/Rural classification
-- `avg_daily_play_hours`: Average daily gaming time
-- `preferred_game_type`: Favorite game genre
-- `uses_public_wifi`: Public WiFi usage indicator
-- `monthly_spend_inr`: Monthly gaming expenditure in INR
-- `government_internet_scheme`: Participation in government schemes
-- `reported_health_issues`: Health impact indicator
-- `academic_or_work_impact`: Impact on studies/work
-
-## 📝 License
-This project is available for educational and research purposes.
-
-## 🤝 Contributing
-Feel free to fork this repository and submit pull requests for any improvements.
-
-## 📧 Contact
-For questions or feedback, please open an issue in this repository.
+Comprehensive exploratory data analysis (EDA) on online gaming behavior patterns from an Indian user cohort (500 records).
 
 ---
-**Note**: This is an educational project for learning data analysis and visualization techniques.
+
+## Project Highlights
+
+- **Data Cleaning**: Handled missing values, standardized nominal and binary categories, imputed numerical outliers using median/mode strategies.
+- **Parametric & Non-Parametric Statistics**: Computed mean, median, mode, and skewness for daily play hours and monthly in-game spending.
+- **Impact Assessment**: Visualized the correlation between intensive gaming duration, self-reported health problems, and work/academic disruptions.
+- **Excel Pivot Cross-Validation**: Analyzed demographic cohorts and spending tiers across multiple Excel pivot sheets.
+
+---
+
+## Key Metrics & Findings
+
+- **Total Cohort Size**: 500 users, 11 core attributes + derived `Age_Group`
+- **Average Daily Play Hours**: **5.38 hours** (median: 5.0 hours, mode: 5.0 hours)
+- **Median Monthly Spend**: **₹2,483** (mean: ₹2,740, right-skewed distribution)
+- **High-Impact Threshold**: Gamers playing > 6 hours/day exhibit marked increases in Severe productivity impact and health fatigue complaints.
+
+---
+
+## Workspace Structure
+
+```
+online-gaming-eda/
+├── data/
+│   └── online_gaming_behavior_cleaned (1).xlsx  # 500-record dataset + Excel pivot tables
+├── notebooks/
+│   └── Online_Gaming_EDA.ipynb                  # Data cleaning and exploratory analysis notebook
+├── README.md                                    # Documentation
+└── requirements.txt                             # Pinned Python dependencies
+```
+
+---
+
+## Quick Start
+
+```bash
+# Install dependencies
+pip install -r requirements.txt
+
+# Launch Jupyter
+jupyter notebook notebooks/Online_Gaming_EDA.ipynb
+```
+
+---
+
+## Technologies Used
+
+- **Python 3.10+**
+- **pandas**, **NumPy**, **Matplotlib**, **Seaborn**, **openpyxl**, **Microsoft Excel**
+
+---
+
+## Author
+
+- **Raunak Nayak** ([GitHub](https://github.com/raunaknayak12) · [LinkedIn](https://linkedin.com/in/raunak-nayak-5b937732a))
